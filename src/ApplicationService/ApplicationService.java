@@ -53,5 +53,12 @@ public class ApplicationService {
 		         .limit(5)
 		         .collect(Collectors.toList());
 	}
+	
+	public List<Employee> getSecondToFive(List<Employee> employees,long startIndex,long endIndex){
+		return employees.stream()
+		         .skip(startIndex)
+		         .limit(endIndex)
+		         .collect(Collectors.toList());
+	}
 
 }
