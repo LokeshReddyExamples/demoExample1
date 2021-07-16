@@ -42,5 +42,8 @@ public class Test {
 		   
 		 // average salaries per department
 		   service.avgSalaryPerDep(empList);
+		   
+		 // Find first five emp
+		   service.getFirstFive(empList);
 	}
 }

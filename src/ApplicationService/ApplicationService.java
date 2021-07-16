@@ -47,5 +47,11 @@ public class ApplicationService {
 		         .collect(Collectors.groupingBy(Employee::getDepartment,
 		        		 Collectors.averagingDouble(Employee::getSalary)));
 	}
+	
+	public List<Employee> getFirstFive(List<Employee> employees){
+		return employees.stream()
+		         .limit(5)
+		         .collect(Collectors.toList());
+	}
 
 }
